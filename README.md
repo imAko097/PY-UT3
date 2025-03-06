@@ -10,7 +10,7 @@ Mejorar mi comprensión y dominio de Python, adaptando ejercicios previamente re
 
 * Python 3.13.2
 
-* 📜 Licencia
+## 📜 Licencia
 
 Este proyecto es de uso personal y educativo. Si te sirve como referencia, ¡adelante!
 
