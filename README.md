@@ -6,6 +6,11 @@ Bienvenido/a a este repositorio donde albergaré diferentes ejercicios de progra
 
 Mejorar mi comprensión y dominio de Python, adaptando ejercicios previamente realizados en Java. De esta manera, podré explorar las diferencias entre ambos lenguajes y reforzar conceptos clave de la programación orientada a objetos en Python.
 
+## 📁 Estructura del Proyecto
+
+El repositorio está organizado en carpetas que representa cada ejercicio en particular. Dentro se encuentran los archivos .py que representaran las clases. 
+También existe un archivo main.py que se encarga de instanciar y ejecutar los diferentes objetos creados en los demás archivos.
+
 ## 🚀 Tecnologías Utilizadas
 
 * Python 3.13.2
