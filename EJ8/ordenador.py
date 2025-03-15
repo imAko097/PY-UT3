@@ -40,5 +40,3 @@ class Ordenador:
         print('-> Max memory:', self.maxMemory)
         print('-> Memory installed:', self.installedMemory)
         print('-> Memory available:', self.get_memoria_disponible())
-
-    
