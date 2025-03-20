@@ -1,5 +1,6 @@
 from contador import Contador
 from usuario import Usuario
+from sistema import Sistema
 
 print("> Testing Contador class...")
 
@@ -20,3 +21,11 @@ for i in range(10):
 
 # Print the user's statistics
 usuario_test.printStatistics()
+
+print("> Testing Sistema class...")
+
+# Sistema
+sistema = Sistema()
+for i in range(100):
+    sistema.simulateAccess()
+sistema.printStatistics()
