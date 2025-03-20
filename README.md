@@ -8,8 +8,7 @@ Mejorar mi comprensión y dominio de Python, adaptando ejercicios previamente re
 
 ## 📁 Estructura del Proyecto
 
-El repositorio está organizado en carpetas que representa cada ejercicio en particular. Dentro se encuentran los archivos .py que representaran las clases. 
-También existe un archivo main.py que se encarga de instanciar y ejecutar los diferentes objetos creados en los demás archivos.
+El repositorio está organizado en carpetas, donde cada una representa un ejercicio en particular. Dentro de cada carpeta, además del archivo `.py` correspondiente a las clases nombradas, se encuentra un archivo main, encargado de instanciar los objetos y ejecutar los diferentes métodos definidos en los archivos .py correspondientes.
 
 ## 🚀 Tecnologías Utilizadas
 
