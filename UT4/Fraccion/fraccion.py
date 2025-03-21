@@ -44,6 +44,38 @@ class Fraccion:
             return Fraccion(self.numerator - other.numerator, self.denominator)
         
         return Fraccion(self.numerator * other.denominator - other.numerator * self.denominator, self.denominator * other.denominator)
+
+    # Multiply two fractions
+    def multiply(self, other):
+        if not isinstance(other, Fraccion):
+            raise TypeError("The object must be a fraction")
+
+        return Fraccion(self.numerator * other.numerator, self.denominator * other.denominator)
+    
+    # Divide two fractions
+    def divide(self, other):
+        if not isinstance(other, Fraccion):
+            raise TypeError("The object must be a fraction")
+
+        return Fraccion(self.numerator * other.denominator, self.denominator * other.numerator)
+    
+    # Fraction same as other
+    def equals(self, other):
+        if not isinstance(other, Fraccion):
+            raise TypeError("The object must be a fraction")
+
+        return self.numerator * other.denominator == other.numerator * self.denominator
+    
+    # Fraction smaller than other
+    def less_than(self, other):
+        if not isinstance(other, Fraccion):
+            raise TypeError("The object must be a fraction")
+
+        return self.numerator * other.denominator < other.numerator * self.denominator
+
+    # Clone the fraction
+    def clone(self):
+        return Fraccion(self.numerator, self.denominator)
     
     # String representation
     def __str__(self):
