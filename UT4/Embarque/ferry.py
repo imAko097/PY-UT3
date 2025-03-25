@@ -62,7 +62,7 @@ class Ferry:
         return passenger_removed
 
     # Get the younger of two passengers (private method)
-    def _the_yourger_of_two(self, one_passenger, another_passenger):
+    def _the_younger_of_two(self, one_passenger, another_passenger):
         if one_passenger is None:
             return another_passenger
         
@@ -75,16 +75,16 @@ class Ferry:
         if another_passenger.get_age() == -1:
             return one_passenger
         
-        return one_passenger if one_passenger.get_age() > another_passenger.get_age() else another_passenger
+        return one_passenger if one_passenger.get_age() < another_passenger.get_age() else another_passenger
     
     # Get the youngest of the ferry
     def get_youngest(self):
         if self.number_of_passengers == 0:
-            return None
+            return f'The ferry is empty'
         
         youngest_passenger = None
+
         for passenger in self.seats:
-            if passenger is None:
-                youngest_passenger = passenger if youngest_passenger is None else self._the_yourger_of_two(youngest_passenger, passenger)
+                youngest_passenger = self._the_younger_of_two(youngest_passenger, passenger)
 
         return youngest_passenger

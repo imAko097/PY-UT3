@@ -43,9 +43,8 @@ print(f)
 print('---')
 
 f.add_passenger(p4)
-print(f)
 
-# The youngest of the ferry
+# The youngest of the ferry (25 years old)
 f.add_passenger(p2)
 
 print(f)
